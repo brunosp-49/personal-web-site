@@ -12,37 +12,70 @@ background-size: cover;
 height: 100vh;
 `
 export const Part2 = styled.div`
-display: flex;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
 align-items: center;
-justify-content: space-around;
 height: 50vh;
 background-color: #f5f5f5;
 font-size: 20vmin;
 color: #264DE4;
 #react{
+  justify-self: center;
 :hover{
     color: #61dafb;
-    font-size: 20.5vmin;
+    cursor: pointer;
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 }
 #js{
+  justify-self: center;
     :hover{
     color: #f0db4f;
-    font-size: 20.5vmin;
+    cursor: pointer;
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 }
 #css{
+  justify-self: center;
     :hover{
     color: #1572b6;
-    font-size: 20.5vmin;
+    cursor: pointer;
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 }
 #html{
+  justify-self: center;
     :hover{
     color: #e54d26;
-    font-size: 20.5vmin;
+    cursor: pointer;
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 }
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
 
 `
 export const Part3 = styled.div`
@@ -53,14 +86,16 @@ align-items: center;
 background-color: #0A0712;
 height: 50vh;
 font-size: 2vw;
-font-weight: 400;
 font-family: 'Segoe UI', sans-serif;
 h2{
     color: #61dafb;
+    font-weight: 800;
 }
 p{
     color: #fff;
+    font-weight: 800;
 }
+
 `
 
 export const DivUp = styled.div`

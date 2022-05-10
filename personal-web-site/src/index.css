@@ -1,3 +1,23 @@
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #2f346c #232429;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #232429;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #949494;
+    border-radius: 7px;
+    border: 3px none #575eaa;
+  }
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +25,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {

@@ -11,7 +11,7 @@ function Index(){
     const [tittle, SetTittle] =useState()
     const [sub, SetSub] =useState()
 
-    const onEnter = (e) =>{
+    const onEnter = (e) => {
         renderInfo(e.target.id)
     }
 
@@ -41,6 +41,20 @@ function Index(){
         }
     }
 
+
+    function downFunction() {
+        window.scrollTo({ 
+            top: document.documentElement.scrollHeight, 
+            behavior: 'smooth'
+            /* you can also use 'auto' behaviour 
+               in place of 'smooth' */
+          }); 
+    }
+
+    function vai(){
+        alert("oii")
+    }
+
     return(
         <div>
             <Header/>
@@ -57,7 +71,7 @@ function Index(){
                     </DivDown>
                 </Part1>
                 <Part2>
-                    <i className="devicon-react-original" id="react" onMouseEnter={onEnter} onMouseLeave={onLeave}></i>
+                    <i className="devicon-react-original" id="react" onMouseEnter={downFunction()} onMouseLeave={onLeave} onMouseOver={onEnter}></i>
                     <i className="devicon-javascript-plain" id="js" onMouseEnter={onEnter} onMouseLeave={onLeave}></i>
                     <i className="devicon-css3-plain-wordmark" id="css" onMouseEnter={onEnter} onMouseLeave={onLeave}></i>
                     <i className="devicon-html5-plain-wordmark" id="html" onMouseEnter={onEnter} onMouseLeave={onLeave}></i>
