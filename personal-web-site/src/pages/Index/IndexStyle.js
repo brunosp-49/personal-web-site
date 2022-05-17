@@ -85,15 +85,16 @@ justify-content: center;
 align-items: center;
 background-color: #0A0712;
 height: 50vh;
-font-size: 2vw;
 font-family: 'Segoe UI', sans-serif;
 h2{
     color: #61dafb;
     font-weight: 800;
+    font-size: 4vw;
 }
 p{
     color: #fff;
     font-weight: 800;
+    font-size: 2.5vw;
 }
 
 `

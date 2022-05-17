@@ -23,7 +23,7 @@ function Index(){
     const renderInfo = (id) =>{
         switch(id){
             case "react":
-                SetTittle("React.JS")
+                SetTittle("REACT.JS")
                 SetSub("Hooks, material UI, Bootstrap, router, etc...")
             break;
             case "js":
@@ -46,8 +46,6 @@ function Index(){
         window.scrollTo({ 
             top: document.documentElement.scrollHeight, 
             behavior: 'smooth'
-            /* you can also use 'auto' behaviour 
-               in place of 'smooth' */
           }); 
     }
 
@@ -78,7 +76,7 @@ function Index(){
                 </Part2>
                 <Part3>
                     <h2>{tittle}</h2>
-                    <p>{sub}</p>
+                    <p className="typing-slider">{sub}</p>
                 </Part3>
             </MainContainer>
         </div>
