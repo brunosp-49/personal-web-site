@@ -74,10 +74,23 @@ display: flex;
 justify-content: space-between;
 height: 30%;
 width: 100%;
-.rotate-center {
+.rotate-center1 {
+    background-color: #fff;
+    border-radius: 1vw;
+    fill: #131313;
     :hover{
 	-webkit-animation: rotate-center 0.6s ease-in-out both;
 	        animation: rotate-center 0.6s ease-in-out both;
+          fill: #fff;
+          background-color: #131313;
+        }
+}
+.rotate-center2 {
+    fill: #fff;
+    :hover{
+	-webkit-animation: rotate-center 0.6s ease-in-out both;
+	        animation: rotate-center 0.6s ease-in-out both;
+          fill: #2291eb;
         }
 }
 @-webkit-keyframes rotate-center {

@@ -1,15 +1,18 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../../Components/Header/Header";
 import {MainContainer, Part1, Part2, Part3, DivUp, DivDown} from "./IndexStyle"
 import pinkCircle from "../../img/pinkCircle.png"
-import ceanoCircle from "../../img/ceanoCircle.png"
-import ceanoCircle2 from "../../img/ceanoCircle2.png"
 import { Link } from "react-router-dom";
+import originals from "../../img/original.png"
+import html from "../../img/html.png"
+import css from "../../img/css.png"
+import js from "../../img/js.png"
+import ts from "../../img/ts.png"
+import react from "../../img/react.png"
 
 function Index(){
-    const [state, setState] = useState()
+    const [imageSelected, setImageSelected] = useState(originals)
     const [tittle, SetTittle] =useState()
-    const [sub, SetSub] =useState()
 
     const onEnter = (e) => {
         renderInfo(e.target.id)
@@ -17,40 +20,42 @@ function Index(){
 
     const onLeave = () =>{
         SetTittle()
-        SetSub()
+        setImageSelected(originals)
     }
 
     const renderInfo = (id) =>{
         switch(id){
             case "react":
                 SetTittle("REACT.JS")
-                SetSub("Hooks, material UI, Bootstrap, router, etc...")
+                setImageSelected(react)
             break;
             case "js":
                 SetTittle("JavaScript")
-                SetSub("Async, await, callback, promises, etc...")
+                setImageSelected(js)
             break;
             case "css":
                 SetTittle("CSS 3")
-                SetSub("Styled-components, responsiveness, clean code.")
+                setImageSelected(css)
             break;
             case "html":
                 SetTittle("HTML 5")
-                SetSub("Clean structure, Good practices and accessibility")
+                setImageSelected(html)
             break;
+            case "ts":
+                SetTittle("TypeScript")
+                setImageSelected(ts)
+            break;
+            default:
+            break
         }
     }
 
 
-    function downFunction() {
+    const downFunction = () =>{
         window.scrollTo({ 
             top: document.documentElement.scrollHeight, 
             behavior: 'smooth'
           }); 
-    }
-
-    function vai(){
-        alert("oii")
     }
 
     return(
@@ -63,20 +68,19 @@ function Index(){
                     </DivUp>
                     <DivDown>
                         <Link to="/portifolio" className="link">
-                            <img className="normal" src={ceanoCircle} alt="portifolio" />
-                            <img className="hover" src={ceanoCircle2} alt="portifolio" />
+                            <button className="normal">PORTFOLIO</button>
                         </Link>
                     </DivDown>
                 </Part1>
                 <Part2>
-                    <i className="devicon-react-original" id="react" onMouseEnter={downFunction()} onMouseLeave={onLeave} onMouseOver={onEnter}></i>
-                    <i className="devicon-javascript-plain" id="js" onMouseEnter={onEnter} onMouseLeave={onLeave}></i>
-                    <i className="devicon-css3-plain-wordmark" id="css" onMouseEnter={onEnter} onMouseLeave={onLeave}></i>
-                    <i className="devicon-html5-plain-wordmark" id="html" onMouseEnter={onEnter} onMouseLeave={onLeave}></i>
+                    <i className="devicon-react-original" id="react" onMouseEnter={()=>downFunction()} onMouseLeave={onLeave} onMouseOver={onEnter}></i>
+                    <i className="devicon-javascript-plain" id="js" onMouseEnter={()=>downFunction()} onMouseLeave={onLeave} onMouseOver={onEnter}></i>
+                    <i className="devicon-typescript-plain" id="ts" onMouseEnter={()=>downFunction()} onMouseLeave={onLeave} onMouseOver={onEnter}></i>
+                    <i className="devicon-html5-plain-wordmark" id="html" onMouseEnter={()=>downFunction()} onMouseLeave={onLeave} onMouseOver={onEnter}></i>
+                    <i className="devicon-css3-plain-wordmark" id="css" onMouseEnter={()=>downFunction()} onMouseLeave={onLeave} onMouseOver={onEnter}></i>
                 </Part2>
-                <Part3>
-                    <h2>{tittle}</h2>
-                    <p className="typing-slider">{sub}</p>
+                <Part3 background={`${imageSelected}`}>
+                    <h2 className="typing">{tittle}</h2>
                 </Part3>
             </MainContainer>
         </div>

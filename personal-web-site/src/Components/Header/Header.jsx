@@ -11,7 +11,7 @@ function Header(){
             <img src={Logo} alt="logotipo"/>
             <MenuContainer>
                 <Index><Link to="/">HOME</Link></Index>
-                <Portifolio><Link to="/portifolio">PORTIFOLIO</Link></Portifolio>
+                <Portifolio><Link to="/portifolio">PORTFOLIO</Link></Portifolio>
                 <About><Link to="/about">ABOUT</Link></About>
                 <Contact><Link to="/contact">CONTACT</Link></Contact>
                 <Social><Link to="/social">SOCIAL</Link></Social>
