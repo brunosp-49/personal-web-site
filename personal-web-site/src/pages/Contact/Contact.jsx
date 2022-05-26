@@ -6,15 +6,13 @@ import backgrounds from "../../img/contact.png";
 import whatsapp from "../../img/whats.jpg";
 import gmail from "../../img/gmail.jpg";
 
-
 function Contact() {
   const [background, setBackground] = useState(backgrounds);
-  useEffect(()=>{
-    setTimeout(setBackground(whatsapp), 5)
-    setTimeout(setBackground(gmail),6)
-    setTimeout(setBackground(backgrounds),7)
-  },[])
-  const [set, setSet] = useState("");
+  useEffect(() => {
+    setTimeout(setBackground(whatsapp), 5);
+    setTimeout(setBackground(gmail), 6);
+    setTimeout(setBackground(backgrounds), 7);
+  }, []);
   const hover = (e) => {
     var elements = e.target.className;
     var element = elements.animVal;
@@ -27,9 +25,9 @@ function Contact() {
   const leave = () => {
     setBackground(backgrounds);
   };
-  const onClick = () =>{
+  const onClick = () => {
     navigator.clipboard.writeText(JSON.stringify("brunospdev@gmail.com"));
-  }
+  };
   return (
     <MainContainer>
       <Header />
@@ -38,7 +36,12 @@ function Contact() {
           <img src={img} alt="get in touch" />
         </div>
         <div className="bottom">
-          <a href="mailto:brunospdev@gmail.com" target="_blank" rel="noreferrer" onClick={()=>onClick()}>
+          <a
+            href="mailto:brunospdev@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+            onClick={() => onClick()}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -52,7 +55,11 @@ function Contact() {
               />
             </svg>
           </a>
-          <a href="https://api.whatsapp.com/send?phone=5512988870530" target="_blank" rel="noreferrer">
+          <a
+            href="https://api.whatsapp.com/send?phone=5512988870530"
+            target="_blank"
+            rel="noreferrer"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"

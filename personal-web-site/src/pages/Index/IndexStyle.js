@@ -88,18 +88,24 @@ color: #264DE4;
 
 `
 export const Part3 = styled.div`
-display: flex;
-flex-direction: column;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
 justify-content: center;
 align-items: center;
-background-image: url(${props => props.background});
+background-color: #0A0712;
 background-size: cover;
 height: 50vh;
 font-family: 'Segoe UI', sans-serif;
+img{
+  position: relative;
+  height: 100%;
+  width: 65%;
+}
 h2{
     color: aqua;
     font-weight: 800;
     font-size: 4vw;
+    width: fit-content;
 }
 p{
     color: #fff;
@@ -107,7 +113,7 @@ p{
     font-size: 2.5vw;
 }
 .typing {
-  position: relative;
+  position: absolute;
 	&::after {
     content: "|";
     position: absolute;
@@ -118,6 +124,11 @@ p{
     animation: typing 4s infinite alternate,
       caret 1s alternate;
   }
+}
+.typing-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 // Animation
 @keyframes typing {

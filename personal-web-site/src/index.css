@@ -1,6 +1,7 @@
   * {
     scrollbar-width: auto;
     scrollbar-color: #2f346c #232429;
+    scroll-behavior: smooth;
   }
 
   /* Chrome, Edge, and Safari */

@@ -2,17 +2,58 @@ import styled from "styled-components"
 import background1 from "../../img/about.png"
 import back from "../../img/back.jpg"
 import perfil from "../../img/perfil.png";
+import filter from "../../img/filter.png"
 
 export const MainContainer = styled.div`
 `
 
 export const Part1 = styled.div`
     display: flex;
-    height: 80vh;
+    justify-content: center;
+    height: 90vh;
     padding-top: 10vh;
     background-image: url(${background1});
     background-size: cover;
     z-index: 3;
+    a{
+        display: flex;
+        position: absolute;
+        align-self: flex-end;
+        justify-content: center;
+        align-items: center;
+        width: 6vw;
+        height: 6vw;
+        margin-bottom: 1vw;
+        animation: pop 0.5s infinite;
+        :hover{
+            width: 6.5vw;
+            height: 6.5vw;
+            animation: none;
+        }
+        @keyframes pop{
+            from{
+                width: 6vw;
+                height: 6vw;
+            }
+            to{
+                width: 6.5vw;
+                height: 6.5vw;
+                margin-bottom: 2vw;
+            }
+        }
+    }
+    .sgg{
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        fill: #1ddde7;
+        transform: rotate(180deg);
+        :hover{
+            width: 6.5vw;
+            height: 6.5vw;
+        }
+    }
     .left{
         display: flex;
         align-items: center;
@@ -76,31 +117,53 @@ export const Part1 = styled.div`
             transition: transform 100ms cubic-bezier(0.4, 0, 0.2, 1);
             z-index: 1;
         }
-        .sub{
-            position: absolute;
-            z-index: 2;
-            margin-top: 5%;
-            width: 70vw;
-            height: 55vw;
-            border-radius: 50%;
-            -webkit-tap-highlight-color: transparent;
-            transform: scale(0.48);
-            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
     }
 `
 
 export const Part2 = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+height: 60vh;
+background-image: url(${filter});
+background-position:center;
+background-size: contain;
+padding: 0 7vw;
+p{
+    text-align: center;
+    font-size: 3.2vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #0F193A;
+    :window-inactive{
+    animation: go-right 1.5s;
+}
+}
+@keyframes go-right {
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+} 
 `
 
 export const Part3 = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: #0D0E25;
 `
 
 export const Part4 = styled.div`
+height: 10vh;
+background-color: #0A0712;
 `
 
-// export const MainContainer = styled.div`
-// `
+export const Part5 = styled.div`
+`
 
 // export const MainContainer = styled.div`
 // `
