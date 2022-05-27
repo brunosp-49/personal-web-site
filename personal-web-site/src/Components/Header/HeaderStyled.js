@@ -35,26 +35,26 @@ a:hover{
 `
 export const Index = styled.div`
 a{
-    color: #3EEBE7;
+    color: ${props => props.color};
 }
 `
 export const Portifolio = styled.div`
 a{
-    color: #E91472
+    color: ${props => props.color};
 }
 `
 export const About = styled.div`
 a{
-    color: #2291EB;
+    color:${props => props.color};
 }
 `
 export const Contact = styled.div`
 a{
-    color: #A72D84;
+    color: ${props => props.color};
 }
 `
 export const Social = styled.div`
 a{
-    color: #01B9E6;
+    color: ${props => props.color};
 }
 `

@@ -21,23 +21,23 @@ export const Part1 = styled.div`
         align-self: flex-end;
         justify-content: center;
         align-items: center;
-        width: 6vw;
-        height: 6vw;
+        width: 5vw;
+        height: 5vw;
         margin-bottom: 1vw;
         animation: pop 0.5s infinite;
         :hover{
-            width: 6.5vw;
-            height: 6.5vw;
+            width: 5.5vw;
+            height: 5.5vw;
             animation: none;
         }
         @keyframes pop{
             from{
-                width: 6vw;
-                height: 6vw;
+                width: 5vw;
+                height: 5vw;
             }
             to{
-                width: 6.5vw;
-                height: 6.5vw;
+                width: 5.5vw;
+                height: 5.5vw;
                 margin-bottom: 2vw;
             }
         }
@@ -131,7 +131,7 @@ background-size: contain;
 padding: 0 7vw;
 p{
     text-align: center;
-    font-size: 3.2vw;
+    font-size: 2.7vw;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #0F193A;
     :window-inactive{
@@ -145,7 +145,7 @@ p{
   to {
     transform: translateX(0);
   }
-} 
+}
 `
 
 export const Part3 = styled.div`
@@ -155,6 +155,62 @@ justify-content: center;
 align-items: center;
 height: 100vh;
 background-color: #0D0E25;
+button{
+    height: 10vw;
+    width: 25vw;
+    background-color: #E91472;
+    border: 0;
+    border-radius: 5vw;
+    color: #fff;
+    font-size: 5vw;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+}
+.up{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 45%;
+}
+.down{
+display: grid;
+flex-wrap: wrap;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+justify-content: center;
+align-items: center;
+height: 55%;
+width: 100%;
+i{
+    justify-self: center;
+    font-size: 8vw;
+    :hover{
+    cursor: pointer;
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+}
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+}
 `
 
 export const Part4 = styled.div`

@@ -12,8 +12,8 @@ function About() {
           <img src={img} alt="bruno siqueira" />
         </div>
         <div className="right">
-          <div class="container">
-            <div class="foi" />
+          <div className="container">
+            <div className="foi" />
           </div>
         </div>
         <a href="#2">
@@ -30,13 +30,30 @@ function About() {
       </Part1>
       <Part2 id="2">
         <p>
-          My name is Bruno, I'm passionate about technology, I work as a
-          front-end developer, and I'm on my way to becoming a FullStack, I'm
-          also currently studying applied technology course at BYU university.
+          I'm a Front-End developer, currently working as a trainee at Givisiez,
+          using React.js, JavaScript, CSS, HTML, currently studying to become a
+          FullStack developer, which is my professional goal, and that's why I
+          study applied technology at Brigham Young University, in order to
+          continue improving my knowledge and also learning more languages to
+          become a more complete professional.
         </p>
       </Part2>
       <Part3>
-        <button>Skills</button>
+        <div className="up">
+          <button>SKILLS</button>
+        </div>
+        <div className="down">
+          <i className="devicon-react-original colored"></i>
+          <i className="devicon-javascript-plain colored"></i>
+          <i className="devicon-typescript-plain colored"></i>
+          <i className="devicon-html5-plain-wordmark colored"></i>
+          <i className="devicon-css3-plain-wordmark colored"></i>
+          <i class="devicon-git-plain colored"></i>
+          <i class="devicon-github-original original"></i>
+          <i class="devicon-materialui-plain colored"></i>
+          <i class="devicon-photoshop-plain colored"></i>
+          <i class="devicon-redux-original"></i>
+        </div>
       </Part3>
       <Part4></Part4>
       <Part5></Part5>
