@@ -95,11 +95,11 @@ align-items: center;
 background-color: #0A0712;
 background-size: cover;
 height: 50vh;
+width: 100%;
 font-family: 'Segoe UI', sans-serif;
 img{
-  position: relative;
-  height: 100%;
-  width: 65%;
+  height: 48vh;
+  width: 48vh;
 }
 h2{
     color: aqua;

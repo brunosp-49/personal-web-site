@@ -48,11 +48,11 @@ function About() {
           <i className="devicon-typescript-plain colored"></i>
           <i className="devicon-html5-plain-wordmark colored"></i>
           <i className="devicon-css3-plain-wordmark colored"></i>
-          <i class="devicon-git-plain colored"></i>
-          <i class="devicon-github-original original"></i>
-          <i class="devicon-materialui-plain colored"></i>
-          <i class="devicon-photoshop-plain colored"></i>
-          <i class="devicon-redux-original"></i>
+          <i className="devicon-git-plain colored"></i>
+          <i className="devicon-github-original original"></i>
+          <i className="devicon-materialui-plain colored"></i>
+          <i className="devicon-photoshop-plain colored"></i>
+          <i className="devicon-redux-original"></i>
         </div>
       </Part3>
       <Part4></Part4>

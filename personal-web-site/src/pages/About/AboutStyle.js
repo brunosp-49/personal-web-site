@@ -156,7 +156,7 @@ align-items: center;
 height: 100vh;
 background-color: #0D0E25;
 button{
-    height: 10vw;
+    height: 8vw;
     width: 25vw;
     background-color: #E91472;
     border: 0;

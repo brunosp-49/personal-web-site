@@ -9,10 +9,20 @@ import css from "../../img/6.png";
 import js from "../../img/3.png";
 import ts from "../../img/4.png";
 import react from "../../img/1.png";
+import { useColor } from "../../Global/globalState";
 
 function Index() {
   const [imageSelected, setImageSelected] = useState(originals);
   const [tittle, SetTittle] = useState("|");
+  const {color, setColor} = useColor()
+  const changePortfolio = () =>{
+    setColor({        
+      home: "#3EEBE7",
+      portfolio: "#fff",
+      about: "#2291EB",
+      contact: "#A72D84",
+      social: "#01B9E6"})
+  }
 
   const onEnter = (e) => {
     renderInfo(e.target.id);
@@ -66,7 +76,7 @@ function Index() {
             <img src={pinkCircle} alt="Bruno logo"></img>
           </DivUp>
           <DivDown>
-            <Link to="/portifolio" className="link">
+            <Link to="/portifolio" className="link" onClick={()=>changePortfolio()}>
               <button className="normal">PORTFOLIO</button>
             </Link>
           </DivDown>
