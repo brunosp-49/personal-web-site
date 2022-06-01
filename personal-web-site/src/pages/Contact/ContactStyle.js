@@ -82,7 +82,7 @@ a{
 `
 
 export const Part2 = styled.div`
-height: 10vh;
+height: 30vh;
 background-color: #0a0712;
 `
 

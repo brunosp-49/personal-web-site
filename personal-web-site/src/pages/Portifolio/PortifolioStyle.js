@@ -265,7 +265,7 @@ background-size: cover;
       }
 `
 export const Part2 = styled.div`
-height: 10vh;
+height: 30vh;
 background-color: #0A0712;
 `
 // export const MainContainer = styled.div`

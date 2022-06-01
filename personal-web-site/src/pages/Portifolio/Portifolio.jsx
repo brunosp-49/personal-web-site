@@ -5,6 +5,7 @@ import background from "../../img/code2.png";
 import future from "../../img/futureEats.png";
 import getList from "../../img/gitList.png";
 import gym from "../../img/gym.png";
+import Footer from "../../Components/Footer/Footer";
 
 function Portifolio() {
   const [backgrounds, setBackgrounds] = useState(background);
@@ -57,7 +58,9 @@ function Portifolio() {
           </div>
         </div>
       </Part1>
-      <Part2></Part2>
+      <Part2>
+        <Footer/>
+      </Part2>
     </MainContainer>
   );
 }

@@ -5,6 +5,7 @@ import img from "../../img/get.png";
 import backgrounds from "../../img/contact.png";
 import whatsapp from "../../img/whats.jpg";
 import gmail from "../../img/gmail.jpg";
+import Footer from "../../Components/Footer/Footer";
 
 function Contact() {
   const [background, setBackground] = useState(backgrounds);
@@ -75,7 +76,9 @@ function Contact() {
           </a>
         </div>
       </Part1>
-      <Part2></Part2>
+      <Part2>
+        <Footer/>
+      </Part2>
     </MainContainer>
   );
 }

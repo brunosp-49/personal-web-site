@@ -18,7 +18,7 @@ svg{
 }
 `
 export const Part2 = styled.div`
-height: 10vh;
+height: 30vh;
 background-color: #0A0712;
 `
 export const Top = styled.div`
@@ -78,6 +78,8 @@ width: 100%;
     background-color: #fff;
     border-radius: 1vw;
     fill: #131313;
+    width: 12vw;
+    height: 12vw;
     :hover{
 	-webkit-animation: rotate-center 0.6s ease-in-out both;
 	        animation: rotate-center 0.6s ease-in-out both;
@@ -87,6 +89,8 @@ width: 100%;
 }
 .rotate-center2 {
     fill: #fff;
+    width: 12vw;
+    height: 12vw;
     :hover{
 	-webkit-animation: rotate-center 0.6s ease-in-out both;
 	        animation: rotate-center 0.6s ease-in-out both;

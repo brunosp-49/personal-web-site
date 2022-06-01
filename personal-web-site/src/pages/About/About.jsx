@@ -1,7 +1,8 @@
 import React from "react";
 import Header from "../../Components/Header/Header";
-import { MainContainer, Part1, Part2, Part3, Part4, Part5 } from "./AboutStyle";
+import { MainContainer, Part1, Part2, Part3, Part4 } from "./AboutStyle";
 import img from "../../img/bno.png";
+import Footer from "../../Components/Footer/Footer";
 
 function About() {
   return (
@@ -55,8 +56,9 @@ function About() {
           <i className="devicon-redux-original"></i>
         </div>
       </Part3>
-      <Part4></Part4>
-      <Part5></Part5>
+      <Part4>
+        <Footer/>
+      </Part4>
     </MainContainer>
   );
 }

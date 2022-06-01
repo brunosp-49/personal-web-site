@@ -214,12 +214,10 @@ i{
 `
 
 export const Part4 = styled.div`
-height: 10vh;
+height: 30vh;
 background-color: #0A0712;
 `
 
-export const Part5 = styled.div`
-`
 
 // export const MainContainer = styled.div`
 // `

@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../../Components/Footer/Footer";
 import Header from "../../Components/Header/Header";
 import { MainContainer, Part1, Part2, Top, Mid, Bottom } from "./SocialStyle";
 
@@ -39,7 +40,9 @@ function Social() {
           </a>
         </Bottom>
       </Part1>
-      <Part2></Part2>
+      <Part2>
+        <Footer/>
+      </Part2>
     </MainContainer>
   );
 }
