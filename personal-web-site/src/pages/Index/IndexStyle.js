@@ -19,6 +19,12 @@ height: 50vh;
 background-color: #f5f5f5;
 font-size: 9vw;
 color: #264DE4;
+@media screen and (max-width: 600px) {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  font-size: 14vw;
+  height: 60vh;
+}
 #react{
   justify-self: center;
 :hover{
@@ -97,9 +103,19 @@ background-size: cover;
 height: 50vh;
 width: 100%;
 font-family: 'Segoe UI', sans-serif;
+@media screen and (max-width: 600px) {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.5fr 1fr;
+  height: 40vh;
+}
 img{
   height: 48vh;
   width: 48vh;
+  @media screen and (max-width: 600px) {
+  height: 30vw;
+  width: 30vw;
+  justify-self: center;
+}
 }
 h2{
     color: aqua;
@@ -147,8 +163,15 @@ height: 70%;
 width: 90%;
 pointer-events: none;
 animation: go-right 1.5s;
+@media screen and (max-width: 600px) {
+  height: 50%;
+  justify-content: center;
+}
 img{
     height: 19.5vw;
+    @media screen and (max-width: 600px) {
+  height: 30vw;
+}
 }
 @keyframes go-right {
   from {
@@ -169,6 +192,10 @@ height: 70%;
 width: 88%;
 text-decoration: none;
 animation: go-left 1.5s;
+@media screen and (max-width: 600px) {
+  justify-content: center;
+  height: 50%;
+}
 .link{
     width: 88%;
     display: flex;
@@ -190,6 +217,13 @@ animation: go-left 1.5s;
     font-size: 3.1vw;
     color: #17296A;
     cursor: pointer;
+    @media screen and (max-width: 600px) {
+      height: 16vw;
+      width: 40vw;
+      border-radius: 8vw;
+      font-size: 5.7vw;
+      margin-top: 8%;
+    }
     :hover{
       background-color: #72ffff;
       color: #364783;

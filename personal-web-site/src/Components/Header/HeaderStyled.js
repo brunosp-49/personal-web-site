@@ -117,10 +117,6 @@ svg{
         justify-self: flex-end;
         margin: 4vw 4vw 0 0;
     }
-    p{
-        font-size: 7vw;
-        color: #01B9E6;
-    }
 }
 .sub-menu{
     z-index: 4;
@@ -134,6 +130,17 @@ svg{
     a{
         text-decoration: none;
         z-index: 4;
+        color: #01B9E6;
+
+        @media screen and (max-width: 600px) {
+            :hover{
+                background-color: #e91672;
+                color: #0D0E25;
+            }
+        }
+        p{
+        font-size: 7vw;
+    }
     }
     svg{
         color: #E91472;

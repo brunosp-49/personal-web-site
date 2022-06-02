@@ -2,17 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useColor } from "../../Global/globalState";
 import Logo from "../../img/logo2.png";
-import {
-  About,
-  Contact,
-  Index,
-  MenuContainer,
-  Portifolio,
-  MainContainer,
-  Social,
-  MainContainerMobile,
-  MainContainerMobileOut
-} from "./HeaderStyled";
+import { About, Contact, Index, MenuContainer, Portifolio, MainContainer, Social, MainContainerMobile, MainContainerMobileOut } from "./HeaderStyled";
 import DensityMediumIcon from "@mui/icons-material/DensityMedium";
 import ClearIcon from "@mui/icons-material/Clear";
 
@@ -124,7 +114,7 @@ function Header() {
               <Link to="/about">
                 <p>ABOUT</p>
               </Link>
-              <Link to="/social">
+              <Link to="/contact">
                 <p>CONTACT</p>
               </Link>
               <Link to="/social">
