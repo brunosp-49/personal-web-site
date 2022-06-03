@@ -9,11 +9,6 @@ import Footer from "../../Components/Footer/Footer";
 
 function Contact() {
   const [background, setBackground] = useState(backgrounds);
-  useEffect(() => {
-    setTimeout(setBackground(whatsapp), 5);
-    setTimeout(setBackground(gmail), 6);
-    setTimeout(setBackground(backgrounds), 7);
-  }, []);
   const hover = (e) => {
     var elements = e.target.className;
     var element = elements.animVal;
