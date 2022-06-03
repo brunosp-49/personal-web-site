@@ -10,7 +10,7 @@ export default function Footer() {
             <i class="devicon-google-plain"></i>
         </Right>
         <Center>
-            <p>®BDEV - 2022</p>
+            <p>®BDEV - 2022</p> 
         </Center>
     </MainContainer>
   )

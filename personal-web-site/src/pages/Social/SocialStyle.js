@@ -36,6 +36,10 @@ P{
     width:  30vw;
     text-align: center;
     margin: 0;
+    @media screen and (max-width: 600px){
+      font-size: 14vw;
+      width: 65vw;
+    }
 }
 .tracking-in-expand {
 	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
@@ -68,18 +72,31 @@ P{
 `
 export const Mid = styled.div`
 height: 30%;
+@media screen and (max-width: 600px){
+     height : 10%;
+    }
 `
 export const Bottom = styled.div`
 display: flex;
 justify-content: space-between;
 height: 30%;
 width: 100%;
+@media screen and (max-width: 600px){
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height: 40%;
+    }
 .rotate-center1 {
     background-color: #fff;
     border-radius: 1vw;
     fill: #131313;
     width: 12vw;
     height: 12vw;
+    @media screen and (max-width: 600px){
+     width : 20vw;
+     height: 20vw;
+    }
     :hover{
 	-webkit-animation: rotate-center 0.6s ease-in-out both;
 	        animation: rotate-center 0.6s ease-in-out both;
@@ -91,6 +108,10 @@ width: 100%;
     fill: #fff;
     width: 12vw;
     height: 12vw;
+    @media screen and (max-width: 600px){
+     height : 20vw;
+     width: 20vw;
+    }
     :hover{
 	-webkit-animation: rotate-center 0.6s ease-in-out both;
 	        animation: rotate-center 0.6s ease-in-out both;

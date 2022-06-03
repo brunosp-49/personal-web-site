@@ -10,28 +10,24 @@ justify-content: space-between;
 height: 100vh;
 background-image: url(${props => props.background || backgrounds});
 background-size: cover;
-svg{
-        width: 100%;
-        fill: #fff;
+    @media screen and (max-width: 600px){
+      flex-direction: column;
     }
-img{
-    width: 90%;
-    pointer-events: none;
-}
-a{
-    display: flex;
-    align-items: center;
-    width: 25%;
-}
 .top{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 35%;
     height: 100%;
-    /* background-color: blue; */
     width: 100%;
-    
+    @media screen and (max-width: 600px){
+      height: 50%;
+      align-items: flex-end;
+    }
+    img{
+    width: 90%;
+    pointer-events: none;
+  }
 }
 .bottom{
     display: flex;
@@ -41,7 +37,19 @@ a{
     gap: 6%;
     width: 65%;
     height: 50%;
-    /* background-color: red; */
+    @media screen and (max-width: 600px){
+      flex-direction: column;
+      height: 40%;
+    }
+    svg{
+        width: 100%;
+        fill: #fff;
+    }
+    a{
+    display: flex;
+    align-items: center;
+    width: 25%;
+    }
 }
 .whatsapps{
     :hover{

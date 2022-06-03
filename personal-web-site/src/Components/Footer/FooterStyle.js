@@ -27,9 +27,15 @@ justify-content: space-around;
 align-items: flex-end;
 height: 50%;
 width: 20%;
+@media screen and (max-width: 600px){
+     width : 50%;
+    }
 i{
     font-size: 2.3vw;
     color: #fff;
+    @media screen and (max-width: 600px){
+      font-size: 8vw;
+    }
     :hover{
         color: #e91472;
         cursor: pointer;
@@ -69,4 +75,7 @@ color: #fff;
 font-size: 1.5vw;
 font-family: 'Roboto', sans-serif;
 font-weight: 500;
+@media screen and (max-width: 600px){
+     font-size : 4vw;
+    }
 `

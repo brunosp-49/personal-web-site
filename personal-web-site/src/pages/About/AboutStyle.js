@@ -15,6 +15,9 @@ export const Part1 = styled.div`
     background-image: url(${background1});
     background-size: cover;
     z-index: 3;
+    @media screen and (max-width: 600px){
+      flex-direction: column;
+    }
     a{
         display: flex;
         position: absolute;
@@ -25,6 +28,13 @@ export const Part1 = styled.div`
         height: 5vw;
         margin-bottom: 1vw;
         animation: pop 0.5s infinite;
+        @media screen and (max-width: 600px){
+            bottom: 0;
+            margin-left: 45%;
+            margin-right: 45%;
+            align-items: center;
+            width: 100vw;
+        }
         :hover{
             width: 5.5vw;
             height: 5.5vw;
@@ -60,16 +70,25 @@ export const Part1 = styled.div`
         justify-content: center;
         height: 100%;
         width: 50%;
+        @media screen and (max-width: 600px){
+            width: 100%;
+            height: 50%;
+            align-items: flex-end;
+        }
         img{
             width: 70%;
         }
     }
     .right{
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         height: 100%;
         width: 50%;
+        @media screen and (max-width: 600px){
+            width: 100%;
+            height: 50%;
+        }
         .container {
         border: 3px solid #fff;
         position: absolute;
@@ -134,17 +153,9 @@ p{
     font-size: 2.7vw;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #0F193A;
-    :window-inactive{
-    animation: go-right 1.5s;
-}
-}
-@keyframes go-right {
-  from {
-    transform: translateX(100vw);
-  }
-  to {
-    transform: translateX(0);
-  }
+    @media screen and (max-width: 600px){
+        font-size: 5.2vw;
+    }
 }
 `
 
@@ -165,12 +176,21 @@ button{
     font-size: 5vw;
     font-weight: 800;
     font-family: 'Open Sans', sans-serif;
+    @media screen and (max-width: 600px){
+        font-size: 12vw;
+        width: 50vw;
+        height: 16vw;
+        border-radius: 7vw;
+    }
 }
 .up{
 display: flex;
 justify-content: center;
 align-items: center;
 height: 45%;
+    @media screen and (max-width: 600px){
+        height: 25%;
+    }
 }
 .down{
 display: grid;
@@ -181,9 +201,16 @@ justify-content: center;
 align-items: center;
 height: 55%;
 width: 100%;
+    @media screen and (max-width: 600px){
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
 i{
     justify-self: center;
     font-size: 8vw;
+    @media screen and (max-width: 600px){
+        font-size: 14vw;
+    }
     :hover{
     cursor: pointer;
 	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;

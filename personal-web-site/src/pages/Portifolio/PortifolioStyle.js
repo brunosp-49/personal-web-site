@@ -23,18 +23,31 @@ background-size: cover;
   grid-column-start: 1;
   grid-column-end: 4;
   a{
-    width: 10%;
-    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 10vw;
+    height: 5vw;
+    text-decoration: none;
+    @media screen and (max-width: 600px){
+      width: 30vw;
+    }
   }
   button{
-    width: 100%;
-    height: 100%;
+    width: 10vw;
+    height: 4.5vw;
     border: 0;
     border-radius: 2vw;
     background-color: #01b9e6;
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
     font-size: 1.5vw;
+    @media screen and (max-width: 600px) {
+      width: 25vw;
+      height: 8vw;
+      border-radius: 4vw;
+      font-size: 4vw;
+    }
     :hover{
       opacity: 0.8;
       cursor: pointer;
@@ -47,16 +60,25 @@ background-size: cover;
     align-items: center;
     height: 60%;
     width: 100%;
+    @media screen and (max-width: 600px){
+     height: 50%;
+    }
     button{
         background-color: #E91472;
-        width: 30%;
-        height: 30%;
+        width: 30vw;
+        height: 10vw;
         border: 0;
-        border-radius: 4vw;
+        border-radius: 4.2vw;
         color: #fff;
         font-size: 4.5vw;
         font-family: 'Open Sans', sans-serif;
         font-weight: 800;
+        @media screen and (max-width: 600px){
+          width: 60vw;
+          height: 18vw;
+          font-size: 8vw;
+          border-radius: 8vw;
+        }
     }
 }
 .down{
@@ -67,6 +89,9 @@ background-size: cover;
   grid-template-rows: 1fr 1fr;
   width: 100%;
   height: 40%;
+  @media screen and (max-width: 600px){
+    height: 50%;
+  }
 }
 
       /* The container <div> - needed to position the dropup content */
@@ -78,6 +103,10 @@ background-size: cover;
         border-radius: 1vw;
         width: 8vw;
         justify-self: center;
+        @media screen and (max-width: 600px){
+          width: 25vw;
+          height: 25vw;
+        }
         :hover{
           border: 0;
         }
@@ -92,9 +121,13 @@ background-size: cover;
         border-radius: 1vw;
         height: 8vw;
         width: 8vw;
-        font-size: 1.2vw;
+
         text-align:center;
         z-index: 2;
+        @media screen and (max-width: 600px){
+          height: 25vw;
+          width: 25vw;
+        }
       }
  
       /* Dropup content (Hidden by Default) */
@@ -107,6 +140,10 @@ background-size: cover;
         border-radius: 1vw;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
+        @media screen and (max-width: 600px){
+          height: 25vw;
+          width: 25vw;
+        }
       }
 
       /* Links inside the dropup */
@@ -119,6 +156,10 @@ background-size: cover;
         text-align: center;
         background-color: #ffe600;
         border-radius: 1vw;
+        @media screen and (max-width: 600px){
+          font-size: 5vw;
+          padding: 0;
+        }
       }
 
       /* Change color of dropup links on hover */
@@ -143,6 +184,10 @@ background-size: cover;
         border-radius: 1vw;
         width: 8vw;
         justify-self: center;
+        @media screen and (max-width: 600px){
+          width: 25vw;
+          height: 25vw;
+        }
         :hover{
           border: 0;
         }
@@ -153,12 +198,17 @@ background-size: cover;
         background-size: cover;
         border-radius: 1vw;
         color: black;
-        border: none;
+        border: 0;
+        border-radius: 1vw;
         height: 8vw;
         width: 8vw;
-        font-size: 1.2vw;
+
         text-align:center;
         z-index: 2;
+        @media screen and (max-width: 600px){
+          height: 25vw;
+          width: 25vw;
+        }
       }
  
       /* Dropup content (Hidden by Default) */
@@ -167,10 +217,14 @@ background-size: cover;
           width: 8vw;
         display: none;
         position: absolute;
-        background-color: #202020;;
+        background-color: #202020;
         border-radius: 1vw;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
+        @media screen and (max-width: 600px){
+          height: 25vw;
+          width: 25vw;
+        }
       }
 
       /* Links inside the dropup */
@@ -183,6 +237,10 @@ background-size: cover;
         text-align: center;
         background-color: #67fa67;
         border-radius: 1vw;
+        @media screen and (max-width: 600px){
+          font-size: 5vw;
+          padding: 0;
+        }
       }
 
       /* Change color of dropup links on hover */
@@ -207,6 +265,10 @@ background-size: cover;
         border-radius: 1vw;
         width: 8vw;
         justify-self: center;
+        @media screen and (max-width: 600px){
+          width: 25vw;
+          height: 25vw;
+        }
         :hover{
           border: 0;
         }
@@ -217,12 +279,17 @@ background-size: cover;
         background-size: cover;
         border-radius: 1vw;
         color: black;
-        border: none;
+        border: 0;
+        border-radius: 1vw;
         height: 8vw;
         width: 8vw;
-        font-size: 1.2vw;
+
         text-align:center;
         z-index: 2;
+        @media screen and (max-width: 600px){
+          height: 25vw;
+          width: 25vw;
+        }
       }
  
       /* Dropup content (Hidden by Default) */
@@ -231,10 +298,14 @@ background-size: cover;
           width: 8vw;
         display: none;
         position: absolute;
-        background-color: #202020;;
+        background-color: #202020;
         border-radius: 1vw;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
+        @media screen and (max-width: 600px){
+          height: 25vw;
+          width: 25vw;
+        }
       }
 
       /* Links inside the dropup */
@@ -247,13 +318,16 @@ background-size: cover;
         text-align: center;
         background-color: #fff;
         border-radius: 1vw;
+        @media screen and (max-width: 600px){
+          font-size: 5vw;
+          padding: 0;
+        }
       }
 
       /* Change color of dropup links on hover */
       .dropup-content2 a:hover {
-        background-color: #bebebe;
-        border-radius: 0.8vw;
-        color: #000;
+        background-color: #ddd;
+        border-radius: 1vw;
       }
 
       /* Show the dropup menu on hover */
