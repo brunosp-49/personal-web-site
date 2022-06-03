@@ -27,7 +27,7 @@ function Portifolio() {
       <Header />
       <Part1 background={`${backgrounds}`}>
         <div className="up">
-          <button>PORTFOLIO</button>
+          <button className="inicial">PORTFOLIO</button>
         </div>
         <div className="down">
           <div className="dropup" onMouseEnter={hover} onMouseLeave={leave}>

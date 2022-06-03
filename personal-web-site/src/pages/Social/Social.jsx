@@ -9,7 +9,7 @@ function Social() {
       <Header />
       <Part1>
         <Top>
-          <p className="tracking-in-expand">SOCIAL</p>
+          <p>SOCIAL</p>
         </Top>
         <Mid></Mid>
         <Bottom>

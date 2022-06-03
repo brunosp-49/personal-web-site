@@ -10,9 +10,9 @@ function About() {
       <Header />
       <Part1>
         <div className="left">
-          <img src={img} alt="bruno siqueira" />
+          <img src={img} alt="bruno siqueira" className="inicial"/>
         </div>
-        <div className="right">
+        <div className="right incial">
           <div className="container">
             <div className="foi" />
           </div>

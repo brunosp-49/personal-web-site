@@ -34,9 +34,9 @@ function Contact() {
       <Header />
       <Part1 background={`${background}`}>
         <div className="top">
-          <img src={img} alt="get in touch" />
+          <img src={img} alt="get in touch" className="inicial"/>
         </div>
-        <div className="bottom">
+        <div className="bottom inicial">
           <a
             href="mailto:brunospdev@gmail.com"
             target="_blank"
