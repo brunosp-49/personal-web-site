@@ -10,7 +10,7 @@ function About() {
       <Header />
       <Part1>
         <div className="left">
-          <img src={img} alt="bruno siqueira" className="inicial"/>
+          <img src={img} alt="bruno siqueira" className="inicial" />
         </div>
         <div className="right incial">
           <div className="container">
@@ -31,12 +31,11 @@ function About() {
       </Part1>
       <Part2 id="2">
         <p>
-          I'm a Front-End developer, currently working as a trainee at Givisiez,
-          using React.js, JavaScript, CSS, HTML, currently studying to become a
-          FullStack developer, which is my professional goal, and that's why I
+          I'm a Front-End developer, currently working as a react specialist at
+          Fullture, and Front-end developer at Givisiez, mainly using React.js,
+          I study to become a FullStack, which is my goal, and that's why I
           study applied technology at Brigham Young University, in order to
-          continue improving my knowledge and also learning more languages to
-          become a more complete professional.
+          improve my knowledge and also become a more complete professional.
         </p>
       </Part2>
       <Part3>
@@ -57,7 +56,7 @@ function About() {
         </div>
       </Part3>
       <Part4>
-        <Footer/>
+        <Footer />
       </Part4>
     </MainContainer>
   );

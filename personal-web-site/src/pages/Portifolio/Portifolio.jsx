@@ -47,8 +47,8 @@ function Portifolio() {
           <div className="dropup2" onMouseEnter={hover} onMouseLeave={leave}>
             <button className="dropbtn2" id="git"></button>
             <div className="dropup-content2">
-              <a href="https://labe-ninja.vercel.app/" target="_blank" rel="noreferrer">Preview</a>
-              <a href="https://github.com/brunosp-49/Shaw-labe-ninja" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://github-list09.herokuapp.com/" target="_blank" rel="noreferrer">Preview</a>
+              <a href="https://github.com/brunosp-49/gitHub-list" target="_blank" rel="noreferrer">GitHub</a>
             </div>
           </div>
           <div className="more">

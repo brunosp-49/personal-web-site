@@ -7,6 +7,11 @@ justify-content: center;
 align-items: center;
 width: 100%;
 height: 100%;
+a{
+  width: fit-content;
+  height: fit-content;
+  text-decoration: none;
+}
 `
 
 // export const Left = styled.div`
