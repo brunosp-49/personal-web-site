@@ -214,7 +214,7 @@ animation: go-left 1.5s;
     margin-right: 0.25vw;
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
-    font-size: 3.1vw;
+    font-size: 2.8vw;
     color: #17296A;
     cursor: pointer;
     @media screen and (max-width: 600px) {

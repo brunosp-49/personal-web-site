@@ -31,11 +31,11 @@ function About() {
       </Part1>
       <Part2 id="2">
         <p>
-          I'm a Front-End developer, currently working as a react specialist at
-          Fullture, and Front-end developer at Givisiez, mainly using React.js,
-          I study to become a FullStack, which is my goal, and that's why I
-          study applied technology at Brigham Young University, in order to
-          improve my knowledge and also become a more complete professional.
+          I'm a Full Stack developer, currently working as a react and react
+          native specialist at Fullture, Givisiez and Geobyte using React.js and
+          React native, I study Software Development at Brigham Young University
+          to improve my knowledge and also to become a more complete
+          professional.
         </p>
       </Part2>
       <Part3>

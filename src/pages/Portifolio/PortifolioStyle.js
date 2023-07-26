@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import gymIco from "../../img/gymico.png"
 import gitIco from "../../img/gitico.png"
-import eatIco from "../../img/eatsico.png"
+import coodeshIco from "../../img/coodeshIco.png"
 
 export const MainContainer = styled.div`
 `
@@ -211,7 +211,7 @@ background-size: cover;
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 2px solid #67fa67;
+        border: 2px solid #1267fc;
         border-radius: 1vw;
         width: 8vw;
         justify-self: center;
@@ -225,7 +225,7 @@ background-size: cover;
       }
 
       .dropbtn1 {
-        background-image: url(${eatIco});
+        background-image: url(${coodeshIco});
         background-size: cover;
         border-radius: 1vw;
         color: black;
@@ -266,7 +266,7 @@ background-size: cover;
         text-decoration: none;
         display: block;
         text-align: center;
-        background-color: #67fa67;
+        background-color: #1267fc;
         border-radius: 1vw;
         @media screen and (max-width: 600px){
           font-size: 5vw;

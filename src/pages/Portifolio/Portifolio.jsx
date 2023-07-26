@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Header from "../../Components/Header/Header";
 import { MainContainer, Part1, Part2 } from "./PortifolioStyle";
 import background from "../../img/code2.png";
-import future from "../../img/futureEats.png";
+import coodesh from "../../img/coodesh.png";
 import getList from "../../img/gitList.png";
 import gym from "../../img/gym.png";
 import Footer from "../../Components/Footer/Footer";
@@ -13,8 +13,8 @@ function Portifolio() {
     var elements = e.target.id;
     if (elements === "gym") {
       setBackgrounds(gym);
-    } else if (elements === "food") {
-      setBackgrounds(future);
+    } else if (elements === "mobile") {
+      setBackgrounds(coodesh);
     }else{
       setBackgrounds(getList)
     }
@@ -38,10 +38,10 @@ function Portifolio() {
             </div>
           </div>
           <div className="dropup1" onMouseEnter={hover} onMouseLeave={leave}>
-            <button className="dropbtn1" id="food"></button>
+            <button className="dropbtn1" id="mobile"></button>
             <div className="dropup-content1">
-              <a href="https://future-eats-14dyyuhzp-brunosp-49.vercel.app/" target="_blank" rel="noreferrer">Preview</a>
-              <a href="https://github.com/brunosp-49/Shaw-labe-food5" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://github.com/brunosp-49/coodesh-store-list" target="_blank" rel="noreferrer">Preview</a>
+              <a href="https://github.com/brunosp-49/coodesh-store-list" target="_blank" rel="noreferrer">GitHub</a>
             </div>
           </div>
           <div className="dropup2" onMouseEnter={hover} onMouseLeave={leave}>

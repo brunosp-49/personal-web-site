@@ -7,7 +7,7 @@ justify-content: space-between;
 position: absolute;
 z-index: 2;
 top: 0;
-height: 16vh;
+height: 12vh;
 width: 100%;
 font-family: 'Open Sans', sans-serif;
 font-weight: 800;
@@ -28,7 +28,7 @@ align-items: center;
 width: 80%;
 a{
     text-decoration: none;
-    font-size: 2.2vw
+    font-size: 1.6vw
     
 }
 a:hover{
