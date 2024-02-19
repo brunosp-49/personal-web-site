@@ -106,10 +106,10 @@ svg{
     align-items: flex-start;
     text-align: center;
     width: 80%;
-    height: 100vh;
+    height: 70vh;
     background-color: #0D0E25;
-    border-bottom-left-radius: 2vw;
-    border-top-left-radius: 2vw;
+    border-bottom-left-radius: 2.5vw;
+    border-top-left-radius: 2.5vw;
     svg{
         font-size: 12vw;
         color: #0a0712;
@@ -124,7 +124,7 @@ svg{
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 80%;
+    height: 60%;
     grid-template-columns: 1fr;
     grid-template-rows: 0.8fr 1fr 1fr 1fr 1fr 1fr;
     a{
@@ -139,7 +139,7 @@ svg{
             }
         }
         p{
-        font-size: 7vw;
+        font-size: 6.5vw;
     }
     }
     svg{

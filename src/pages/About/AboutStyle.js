@@ -206,7 +206,7 @@ button{
     font-weight: 800;
     font-family: 'Open Sans', sans-serif;
     @media screen and (max-width: 600px){
-        font-size: 12vw;
+        font-size: 10vw;
         width: 50vw;
         height: 16vw;
         border-radius: 7vw;

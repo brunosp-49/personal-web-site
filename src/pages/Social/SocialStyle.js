@@ -36,7 +36,7 @@ P{
     -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     @media screen and (max-width: 600px){
-      font-size: 14vw;
+      font-size: 12vw;
       width: 65vw;
     }
 }
