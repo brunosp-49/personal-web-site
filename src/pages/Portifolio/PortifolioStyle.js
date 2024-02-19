@@ -96,12 +96,12 @@ background-size: cover;
     }
     button{
         background-color: #E91472;
-        width: 25vw;
-        height: 8vw;
+        width: 24vw;
+        height: 6vw;
         border: 0;
         border-radius: 4.2vw;
         color: #fff;
-        font-size: 3.2vw;
+        font-size: 2.8vw;
         font-family: 'Open Sans', sans-serif;
         font-weight: 800;
         @media screen and (max-width: 600px){
