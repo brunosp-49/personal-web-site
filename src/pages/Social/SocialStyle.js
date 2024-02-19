@@ -17,10 +17,7 @@ svg{
     }
 }
 `
-export const Part2 = styled.div`
-height: 30vh;
-background-color: #0A0712;
-`
+
 export const Top = styled.div`
 display: flex;
 justify-content: center;
@@ -30,10 +27,10 @@ font-family: 'Open Sans', sans-serif;
 font-weight: 800;
 P{
     color: #FFF;
-    font-size: 6vw;
+    font-size: 4vw;
     background-color: #e91472;
     border-radius: 10vw;
-    width:  30vw;
+    width:  20vw;
     text-align: center;
     margin: 0;
     -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
@@ -89,8 +86,8 @@ width: 100%;
     background-color: #fff;
     border-radius: 1vw;
     fill: #131313;
-    width: 12vw;
-    height: 12vw;
+    width: 8vw;
+    height: 8vw;
     @media screen and (max-width: 600px){
      width : 20vw;
      height: 20vw;
@@ -104,8 +101,8 @@ width: 100%;
 }
 .rotate-center2 {
     fill: #fff;
-    width: 12vw;
-    height: 12vw;
+    width: 8vw;
+    height: 8vw;
     @media screen and (max-width: 600px){
      height : 20vw;
      width: 20vw;

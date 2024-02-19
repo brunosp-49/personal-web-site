@@ -17,7 +17,7 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 align-items: center;
 height: 50vh;
 background-color: #f5f5f5;
-font-size: 9vw;
+font-size: 6vw;
 color: #264DE4;
 @media screen and (max-width: 600px) {
   grid-template-columns: 1fr;
@@ -76,8 +76,8 @@ color: #264DE4;
             transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
   }
 }
 @keyframes scale-up-center {
@@ -86,8 +86,8 @@ color: #264DE4;
             transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
   }
 }
 
@@ -100,7 +100,7 @@ justify-content: center;
 align-items: center;
 background-color: #0A0712;
 background-size: cover;
-height: 50vh;
+height: 35vh;
 width: 100%;
 font-family: 'Segoe UI', sans-serif;
 @media screen and (max-width: 600px) {
@@ -109,8 +109,8 @@ font-family: 'Segoe UI', sans-serif;
   height: 40vh;
 }
 img{
-  height: 48vh;
-  width: 48vh;
+  height: 30vh;
+  width: 30vh;
   @media screen and (max-width: 600px) {
   height: 30vw;
   width: 30vw;
@@ -120,7 +120,7 @@ img{
 h2{
     color: aqua;
     font-weight: 800;
-    font-size: 4vw;
+    font-size: 2.5vw;
     width: fit-content;
 }
 p{
@@ -168,7 +168,7 @@ animation: go-right 1.5s;
   justify-content: center;
 }
 img{
-    height: 19.5vw;
+    height: 18vw;
     @media screen and (max-width: 600px) {
   height: 30vw;
 }
@@ -205,7 +205,7 @@ animation: go-left 1.5s;
 .normal{
     position: absolute;
     z-index: 1;
-    height: 8vw;
+    height: 6vw;
     width: 22vw;
     margin-top: 2%;
     background-color: #1bffff;
@@ -214,7 +214,7 @@ animation: go-left 1.5s;
     margin-right: 0.25vw;
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
-    font-size: 2.8vw;
+    font-size: 2.4vw;
     color: #17296A;
     cursor: pointer;
     @media screen and (max-width: 600px) {

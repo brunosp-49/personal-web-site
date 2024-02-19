@@ -56,7 +56,7 @@ background-size: cover;
       align-items: flex-end;
     }
     img{
-    width: 90%;
+    width: 60%;
     pointer-events: none;
   }
 }
@@ -73,7 +73,7 @@ background-size: cover;
       height: 40%;
     }
     svg{
-        width: 100%;
+        width: 70%;
         fill: #fff;
     }
     a{
@@ -104,8 +104,8 @@ background-size: cover;
             transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
   }
 }
 @keyframes scale-up-center {
@@ -114,15 +114,10 @@ background-size: cover;
             transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
   }
 }
-`
-
-export const Part2 = styled.div`
-height: 30vh;
-background-color: #0a0712;
 `
 
 // export const MainContainer = styled.div`

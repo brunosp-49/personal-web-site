@@ -5,8 +5,8 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-width: 100%;
-height: 100%;
+height: 15vh;
+background-color: #0A0712;
 a{
   width: fit-content;
   height: fit-content;
@@ -36,7 +36,7 @@ width: 20%;
      width : 50%;
     }
 i{
-    font-size: 2.3vw;
+    font-size: 1.5vw;
     color: #fff;
     @media screen and (max-width: 600px){
       font-size: 8vw;
@@ -77,7 +77,7 @@ align-items: center;
 width: 100%;
 height: 50%;
 color: #fff;
-font-size: 1.5vw;
+font-size: 0.8vw;
 font-family: 'Roboto', sans-serif;
 font-weight: 500;
 @media screen and (max-width: 600px){

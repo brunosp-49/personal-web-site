@@ -34,14 +34,14 @@ background-size: cover;
     }
   }
   button{
-    width: 10vw;
-    height: 4.5vw;
+    width: 9vw;
+    height: 3vw;
     border: 0;
     border-radius: 2vw;
     background-color: #01b9e6;
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     @media screen and (max-width: 600px) {
       width: 25vw;
       height: 8vw;
@@ -96,12 +96,12 @@ background-size: cover;
     }
     button{
         background-color: #E91472;
-        width: 30vw;
-        height: 10vw;
+        width: 25vw;
+        height: 8vw;
         border: 0;
         border-radius: 4.2vw;
         color: #fff;
-        font-size: 4.5vw;
+        font-size: 3.2vw;
         font-family: 'Open Sans', sans-serif;
         font-weight: 800;
         @media screen and (max-width: 600px){
@@ -368,10 +368,6 @@ background-size: cover;
         justify-content: space-between;
         z-index: 3;
       }
-`
-export const Part2 = styled.div`
-height: 30vh;
-background-color: #0A0712;
 `
 // export const MainContainer = styled.div`
 // `

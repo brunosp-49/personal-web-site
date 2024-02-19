@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 import Header from "../../Components/Header/Header";
-import {MainContainer, Part1, Part2, Part3, DivUp, DivDown} from "./IndexStyle";
+import {
+  MainContainer,
+  Part1,
+  Part2,
+  Part3,
+  DivUp,
+  DivDown,
+} from "./IndexStyle";
 import pinkCircle from "../../img/pinkCircle.png";
 import { Link } from "react-router-dom";
 import originals from "../../img/2.png";
@@ -14,15 +21,16 @@ import { useColor } from "../../Global/globalState";
 function Index() {
   const [imageSelected, setImageSelected] = useState(originals);
   const [tittle, SetTittle] = useState("|");
-  const {color, setColor} = useColor()
-  const changePortfolio = () =>{
-    setColor({        
+  const { setColor } = useColor();
+  const changePortfolio = () => {
+    setColor({
       home: "#3EEBE7",
       portfolio: "#fff",
       about: "#2291EB",
       contact: "#A72D84",
-      social: "#01B9E6"})
-  }
+      social: "#01B9E6",
+    });
+  };
 
   const onEnter = (e) => {
     renderInfo(e.target.id);
@@ -76,7 +84,11 @@ function Index() {
             <img src={pinkCircle} alt="Bruno logo"></img>
           </DivUp>
           <DivDown>
-            <Link to="/portifolio" className="link" onClick={()=>changePortfolio()}>
+            <Link
+              to="/portifolio"
+              className="link"
+              onClick={() => changePortfolio()}
+            >
               <button className="normal">PORTFOLIO</button>
             </Link>
           </DivDown>
@@ -119,7 +131,7 @@ function Index() {
           ></i>
         </Part2>
         <Part3 background={`${imageSelected}`}>
-          <img src={imageSelected} alt="background"/>
+          <img src={imageSelected} alt="background" />
           <div className="typing-container">
             <h2 className="typing">{tittle}</h2>
           </div>

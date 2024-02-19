@@ -53,8 +53,8 @@ export const Part1 = styled.div`
         align-self: flex-end;
         justify-content: center;
         align-items: center;
-        width: 5vw;
-        height: 5vw;
+        width: 4vw;
+        height: 4vw;
         margin-bottom: 1vw;
         animation: pop 0.5s infinite;
         @media screen and (max-width: 600px){
@@ -65,18 +65,18 @@ export const Part1 = styled.div`
             width: 100vw;
         }
         :hover{
-            width: 5.5vw;
-            height: 5.5vw;
+            width: 3.3vw;
+            height: 3.3vw;
             animation: none;
         }
         @keyframes pop{
             from{
-                width: 5vw;
-                height: 5vw;
+                width: 3vw;
+                height: 3vw;
             }
             to{
-                width: 5.5vw;
-                height: 5.5vw;
+                width: 3.3vw;
+                height: 3.3vw;
                 margin-bottom: 2vw;
             }
         }
@@ -98,7 +98,7 @@ export const Part1 = styled.div`
         align-items: center;
         justify-content: center;
         height: 100%;
-        width: 50%;
+        width: 40%;
         @media screen and (max-width: 600px){
             width: 100%;
             height: 50%;
@@ -172,7 +172,7 @@ export const Part2 = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
-height: 60vh;
+height: 40vh;
 background-image: url(${filter});
 background-position:center;
 background-size: contain;
@@ -196,13 +196,13 @@ align-items: center;
 height: 100vh;
 background-color: #0D0E25;
 button{
-    height: 8vw;
-    width: 25vw;
+    height: 6vw;
+    width: 20vw;
     background-color: #E91472;
     border: 0;
     border-radius: 5vw;
     color: #fff;
-    font-size: 5vw;
+    font-size: 3.5vw;
     font-weight: 800;
     font-family: 'Open Sans', sans-serif;
     @media screen and (max-width: 600px){
@@ -236,7 +236,7 @@ width: 100%;
     }
 i{
     justify-self: center;
-    font-size: 8vw;
+    font-size: 6vw;
     @media screen and (max-width: 600px){
         font-size: 14vw;
     }
@@ -268,12 +268,6 @@ i{
 }
 }
 `
-
-export const Part4 = styled.div`
-height: 30vh;
-background-color: #0A0712;
-`
-
 
 // export const MainContainer = styled.div`
 // `

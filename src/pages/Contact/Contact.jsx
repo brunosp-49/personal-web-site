@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Header from "../../Components/Header/Header";
-import { MainContainer, Part1, Part2 } from "./ContactStyle";
+import { MainContainer, Part1 } from "./ContactStyle";
 import img from "../../img/get.png";
 import backgrounds from "../../img/contact.png";
 import whatsapp from "../../img/whats.jpg";
@@ -29,7 +29,7 @@ function Contact() {
       <Header />
       <Part1 background={`${background}`}>
         <div className="top">
-          <img src={img} alt="get in touch" className="inicial"/>
+          <img src={img} alt="get in touch" className="inicial" />
         </div>
         <div className="bottom inicial">
           <a
@@ -71,9 +71,7 @@ function Contact() {
           </a>
         </div>
       </Part1>
-      <Part2>
-        <Footer/>
-      </Part2>
+      <Footer />
     </MainContainer>
   );
 }

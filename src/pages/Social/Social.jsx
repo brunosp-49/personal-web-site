@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../../Components/Footer/Footer";
 import Header from "../../Components/Header/Header";
-import { MainContainer, Part1, Part2, Top, Mid, Bottom } from "./SocialStyle";
+import { MainContainer, Part1, Top, Mid, Bottom } from "./SocialStyle";
 
 function Social() {
   return (
@@ -40,9 +40,7 @@ function Social() {
           </a>
         </Bottom>
       </Part1>
-      <Part2>
-        <Footer/>
-      </Part2>
+      <Footer />
     </MainContainer>
   );
 }

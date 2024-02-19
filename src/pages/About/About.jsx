@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../../Components/Header/Header";
-import { MainContainer, Part1, Part2, Part3, Part4 } from "./AboutStyle";
+import { MainContainer, Part1, Part2, Part3 } from "./AboutStyle";
 import img from "../../img/bno.png";
 import Footer from "../../Components/Footer/Footer";
 
@@ -20,8 +20,8 @@ function About() {
         <a href="#2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
+            width="10"
+            height="10"
             viewBox="0 0 24 24"
             className="sgg"
           >
@@ -31,11 +31,8 @@ function About() {
       </Part1>
       <Part2 id="2">
         <p>
-          I'm a Full Stack developer, currently working as a react and react
-          native specialist at Fullture, Givisiez and Geobyte using React.js and
-          React native, I study Software Development at Brigham Young University
-          to improve my knowledge and also to become a more complete
-          professional.
+          I'm a Full Stack Developer, working as a Tech Lead/Frontend Developer
+          at Condofy, studying Software Engineering at Brigham Young University.
         </p>
       </Part2>
       <Part3>
@@ -55,9 +52,7 @@ function About() {
           <i className="devicon-redux-original"></i>
         </div>
       </Part3>
-      <Part4>
-        <Footer />
-      </Part4>
+      <Footer />
     </MainContainer>
   );
 }
